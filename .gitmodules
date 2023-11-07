@@ -1,0 +1,3 @@
+[submodule "submodule-sample"]
+	path = submodule-sample
+	url = git@github.com:yass97/submodule-sample.git
