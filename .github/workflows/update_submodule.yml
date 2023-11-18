@@ -40,8 +40,8 @@ jobs:
       #   with:
       #     ssh-key: ${{ secrets.GHA_SSH_PRIVATE_KEY }}
       #     submodules: recursive
-      # - name: Update submodule
-      #   run: git submodule update --remote
+      - name: Update submodule
+        run: git submodule update --remote
       - name: Check git status
         id: status
         run: echo "status=$(git status -s)" >> $GITHUB_OUTPUT
